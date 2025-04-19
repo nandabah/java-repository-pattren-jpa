@@ -1,6 +1,6 @@
 package id.nan.repository;
 
-import id.nan.entity.User;
+import id.nan.model.User;
 
 public interface UserRepository {
     User InsertUser(User user);

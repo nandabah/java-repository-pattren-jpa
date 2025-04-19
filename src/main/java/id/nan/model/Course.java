@@ -1,4 +1,4 @@
-package id.nan.entity;
+package id.nan.model;
 
 import jakarta.persistence.*;
 import lombok.*;
