@@ -1,5 +1,7 @@
 package id.nan.repository.Impl;
 
+import id.nan.entity.Course;
+import id.nan.entity.Teacher;
 import id.nan.entity.User;
 import id.nan.repository.UserRepository;
 import id.nan.util.JpaUtil;
@@ -16,15 +18,18 @@ public class UserRepositoryImpl implements UserRepository {
    // Entity manager untuk menangani operasi persistensi
    private EntityManager entityManager;
    
+   
    // Transaction manager for handling database transactions
    // Transaction manager untuk menangani transaksi database
    private EntityTransaction entityTransaction;
 
     @Override
-    public User InsertUser(User user) {
+    public User InsertUser(User user, Teacher teacher) {
         // Get entity manager instance from JpaUtil
         // Mendapatkan instance entity manager dari JpaUtil
         entityManager = JpaUtil.getEntityManager();
+
+        Course course = new Course(null, "Java", teacher, null);
         
         // Get transaction instance from entity manager
         // Mendapatkan instance transaction dari entity manager
