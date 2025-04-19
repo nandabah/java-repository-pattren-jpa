@@ -1,38 +1,60 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignore logs
+logs
+*.log
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# Ignore IDEs
 *.iml
 *.ipr
+*.iws
+.idea
+.vscode
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Ignore build tools
+target
+classes
+generated
+bin
+out
+release
+dist
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Ignore dependencies
+lib
+vendor
 
-### VS Code ###
-.vscode/
+# Ignore tests
+test-reports
+test-results
 
-### Mac OS ###
+# Ignore generated files
+*.class
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore user files
+*.userprefs
+*.properties
+*.settings
+*.launch
+
+# Ignore OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore temp files
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Ignore local config files
+local.properties
+local.cfg
